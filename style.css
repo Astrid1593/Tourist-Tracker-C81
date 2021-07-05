@@ -1,0 +1,26 @@
+.spaceBetween{
+    color: white;
+}
+.topText{
+    margin-right: 300px;
+}
+#mainSection{
+    text-align: center;
+}
+#image1{
+    width: 30%;
+    margin-left: 650px;
+    transition: all 1.5s ease-in-out;
+}
+#image1:hover{
+    transform: scale(0.85);
+}
+#addTouristInput{
+    width: 275px;
+}
+input{
+    border-width: 1px;
+    border-color: lightgrey;
+    width: 250px;
+    height: 30px;
+}

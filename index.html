@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Tourist Tracker</title>
+        <!--Connecting to bootstrap-->
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="topText">Tourist Tracker</h1>
+        <p class="topText">This website is for airport staff to keep track of the most recent tourists entering Hawaii</p>
+        <hr>
+        <!--The main section-->
+        <section id="mainSection">
+                <img id="image1" class="img-responsive" src="https://image.freepik.com/free-vector/family-with-children-luggage-white-background_277904-271.jpg">
+                <br>
+                <h3>Add tourist</h3>
+            <span>
+                <input type="text" id="addTouristInput" placeholder="Tourist name and country they came from">
+            </span>
+            <span><button type="button" id="addTourist" onclick="logTourist() ">Add to log</button></span>
+            <hr>
+            <h4 id="touristNamesOnceLogged"></h4>
+            <hr>
+            <h3>Tourist log</h3>
+            <h3 id="displayLogH3"></h3>
+            <button type="button" id="showLog" onclick="displayLog()">Display log</button>
+            <button id="sortLog" onclick="sortLog()">Sort log</button>
+            <h6>Log will be sorted in alphabetical order</h6>
+            <hr>
+            <h4 id="displayTouristsH4"></h4>
+            <hr>
+            <h3>Search Log</h3>
+            <span>
+            <input type="text" id="searchLog" placeholder="Search tourist name and country">
+            </span>
+            <span><button type="button" id="searchButton" onclick="searchLog()">Search log</button></span>
+            <h4 id="timesFound"></h4>
+        </section>
+    </body>
+</html>
